@@ -1,0 +1,1 @@
+INSERT INTO zoologico (nombre,ciudad,pais,ubicacion,area,presupuesto_anual) VALUES ('Zoo A','Ciudad A','Pais A',10000,50000)
