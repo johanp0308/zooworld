@@ -27,8 +27,7 @@ public class EspecieEntity {
     private String familia;
     private String situacion;
     
-    @OneToMany()
-    // @JsonIgnoreProperties("animales")
+    @OneToMany(mappedBy = "especie", cascade = CascadeType.ALL)
     private List<AnimalEntity> animales;
 
 }

@@ -27,7 +27,7 @@ public class ZoologicoEntity{
     private float area;
     private float presupuesto_anual;
     
-    @OneToMany()
+    @OneToMany(mappedBy = "zoologicos", cascade = CascadeType.ALL)
     private List<AnimalEntity> animales;
     // @OneToMany(mappedBy = "zoologicos",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     // @JsonIgnoreProperties("zoologico")
